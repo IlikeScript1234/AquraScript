@@ -24,7 +24,7 @@ local HumanoidRootPart = chr:WaitForChild("HumanoidRootPart")
 ]]
 
 local InfJump = {Enabled = false}
-InfJump = Exploit.CreateToggle({
+InfJump = E.CreateToggle({
     Name = "Infinite Jump",
     Function = function(callback)
         InfJump.Enabled = callback
@@ -44,7 +44,7 @@ InfJump = Exploit.CreateToggle({
 
 local SpeedValue = {Value = 4}
 local Speed = {Enabled = false}
-Speed = Movement.CreateToggle({
+Speed = M.CreateToggle({
     Name = "Speed",
     Function = function(callback)
         Speed.Enabled = callback
@@ -56,7 +56,7 @@ Speed = Movement.CreateToggle({
     end
 })
 
-Movement.CreateSlider({
+M.CreateSlider({
     Name = "Value",
     Min = 12,
     Max = 200,
@@ -68,7 +68,7 @@ Movement.CreateSlider({
 
 local SpeedValue = {Value = 4}
 local Speed = {Enabled = false}
-Speed = Movement.CreateToggle({
+Speed = M.CreateToggle({
     Name = "Speed",
     Function = function(callback)
         Speed.Enabled = callback
@@ -79,7 +79,7 @@ Speed = Movement.CreateToggle({
         end
     end
 })
-Movement.CreateSlider({
+M.CreateSlider({
     Name = "Value",
     Min = 12,
     Max = 200,
